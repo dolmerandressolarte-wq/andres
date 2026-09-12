@@ -1,0 +1,319 @@
+:root {
+    --primary: blue;
+    --primary-hover: blue;
+    --primary-light: #ede9fe;
+
+    --navy: #1e1b4b;
+    --text: #16213a;
+    --muted: #667085;
+
+    --border: #dfe5ee;
+    --background: #86CEF3;
+    --background-soft: #3776BC;
+
+    --danger: #c62828;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+
+    --shadow: 0 24px 70px rgba(76, 29, 149, 0.10);
+
+    --container: 980px;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+    background: var(--background-soft);
+    color: var(--text);
+}
+
+/* Pagina*/
+.form-page { min-height: 100vh; }
+
+.form-section { padding: 70px 20px; }
+
+.form-container {
+    width: min(100%, var(--container));
+    margin-inline: auto;
+    padding: 42px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+/* Encabezzado */
+.form-header {
+    max-width: 720px;
+    margin-bottom: 38px;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: var(--primary);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    padding: 6px 12px;
+    background: var(--primary-light);
+    border-radius: 999px;
+}
+
+.form-header h1 {
+    margin: 14px 0 0;
+    color: white;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: center; 
+}
+
+.form-header p {
+    margin: 16px 0 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Formularoi */
+.contact-form {
+    display: grid;
+    gap: 30px;
+}
+
+.form-block {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 8px;
+}
+
+.form-block h2 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-field {
+    display: grid;
+    gap: 10px;
+}
+
+.form-field label,
+fieldset legend {
+    color: var(--navy);
+    font-size: .92rem;
+    font-weight: 650;
+}
+
+/* Controles*/
+.form-field input[type="text"],
+.form-field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: #ffffff;
+    color: var(--text);
+    font: inherit;
+    outline: none;
+    transition: border-color 160ms ease,
+                box-shadow 160ms ease,
+                background-color 160ms ease;
+}
+
+.form-field textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #98a2b3;
+}
+
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible,
+.button:focus-visible,
+.choice input:focus-visible {
+    outline: 3px solid rgba(124, 58, 237, 0.28);
+    outline-offset: 2px;
+}
+
+/* Rango */
+.form-field input[type="range"] {
+    width: 100%;
+    padding: 0;
+    accent-color: var(--primary);
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+/*  números del rango */
+.range-scale {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    margin-top: -2px;
+}
+
+
+.range-scale span {
+    font-size: .82rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* Etiquetas descriptivas en los extremos */
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: .78rem;
+    color: var(--muted);
+    font-weight: 500;
+    font-style: italic;
+    padding: 0 2px;
+}
+
+/* FIELDSET Y CHOICES */
+fieldset {
+    margin: 0;
+    padding: 22px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-md);
+    background: #ffffff;
+}
+
+fieldset legend {
+    padding: 0 8px;
+    background: var(--background);
+}
+
+.choice-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 160ms ease;
+}
+
+.choice:hover {
+    background: var(--primary-light);
+}
+
+.choice input {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* AYUDA */
+.field-help {
+    color: var(--muted);
+    font-size: .82rem;
+    line-height: 1.5;
+}
+
+.required-mark {
+    color: var(--danger);
+}
+
+/* BOTONES */
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.button {
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 26px;
+    border-radius: var(--radius-sm);
+    font: inherit;
+    font-size: .95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 160ms ease,
+                background-color 160ms ease,
+                border-color 160ms ease,
+                box-shadow 160ms ease;
+}
+
+.button-primary {
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 6px 16px -4px rgba(124, 58, 237, 0.4);
+}
+
+.button-primary:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px -6px rgba(124, 58, 237, 0.5);
+}
+
+.button-secondary {
+    border: 1px solid var(--border);
+    background: #ffffff;
+    color: var(--navy);
+}
+
+.button-secondary:hover {
+    border-color: #b9c4d3;
+    background: var(--primary-light);
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+    .form-section { padding: 30px 14px; }
+
+    .form-container {
+        padding: 26px 20px;
+        border-radius: var(--radius-md);
+    }
+
+    .form-grid { grid-template-columns: 1fr; }
+
+    .form-actions { flex-direction: column; }
+
+    .button { width: 100%; }
+}
