@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suite Cabaña | El Refugio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header-->
+    <header class="header">
+        <div class="container header-container">
+            <a class="brand" href="index.html">
+                <span class="brand-name">El <span>Refugio</span></span>
+            </a>
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="index.html#servicios">Cabañas</a>
+                <a href="index.html#estandares">Servicios</a>
+                <a class="nav-cta" href="index.html#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- hero servicio -->
+        <section class="service-hero">
+            <div class="container service-hero-grid">
+                <div>
+                    <span class="service-category">CABAÑA PREMIUM</span>
+                    <h1>Suite Cabaña</h1>
+                    <h2>Nuestra cabaña más cómoda.</h2>
+                    <p>
+                        Sesenta metros cuadrados de pura comodidad, con Jacuzzi,
+                        fogata y zona BBQ. Ideal para quienes buscan descanso.
+                    </p>
+                </div>
+                <div class="service-visual">SC</div>
+            </div>
+        </section>
+
+        <!-- capacidad -->
+        <section class="service-section">
+            <div class="container">
+                <header class="section-heading">
+                    <span class="section-label">CAPACIDADES</span>
+                    <h2>¿Qué incluye la suite?</h2>
+                </header>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Cama premium</h3>
+                        <p>Colchón ortopédico y sábanas de algodón egipcio.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Fogata</h3>
+                        <p>Incluye masmelos para la noche.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Jacuzzi</h3>
+                        <p>Con sales minerales disponible por 3 horas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- hacer reserva  -->
+        <section class="reserve" id="reservar">
+            <div class="container">
+                <header class="section-heading">
+                    <span class="section-label">RESERVA TU CABAÑA</span>
+                    <h2>Reserva en menos de 2 minutos.</h2>
+                    <p>Selecciona tus fechas y preferencias. Te confirmamos por correo o WhatsApp. Campos con * son obligatorios.</p>
+                </header>
+
+                <form class="reserve-form" action="#" method="post">
+
+                    <!-- fechas, huespedes -->
+                    <div class="reserve-block">
+                        <h3>Fechas y huéspedes</h3>
+
+                        <div class="reserve-grid">
+                            <div class="field">
+                                <label for="llegada">
+                                    Fecha de llegada
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input type="date" id="llegada" name="llegada" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="salida">
+                                    Fecha de salida
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input type="date" id="salida" name="salida" required>
+                            </div>
+                        </div>
+
+                        <div class="reserve-grid">
+                            <div class="field">
+                                <label for="hora">Hora estimada de llegada</label>
+                                <input type="time" id="hora" name="hora">
+                            </div>
+
+                            <div class="field">
+                                <label for="huespedes">
+                                    Número de huéspedes
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input type="number" id="huespedes" name="huespedes" min="1" max="10" step="1" value="2" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- sservicios adicionales Checkboxes -->
+                    <div class="reserve-block">
+                        <h3>Servicios adicionales</h3>
+
+                        <fieldset class="choice-fieldset">
+                            <legend>Selecciona los que quieras agregar</legend>
+                            <div class="choice-list choice-list--grid">
+                                <label class="choice">
+                                    <input type="checkbox" name="extras" value="fogata">
+                                    <span>Adicionar horas en Jacuzzi</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="checkbox" name="extras" value="jacuzzi">
+                                    <span>Desayuno</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="checkbox" name="extras" value="desayuno">
+                                    <span>Almuerzo</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="checkbox" name="extras" value="masaje">
+                                    <span>Cena</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="checkbox" name="extras" value="bbq">
+                                    <span>Mecato</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="checkbox" name="extras" value="transporte">
+                                    <span>Bebidas</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <!-- modalidad de contacto radios-->
+                    <div class="reserve-block">
+                        <h3>¿Cómo prefieres que te contactemos?</h3>
+
+                        <fieldset class="choice-fieldset">
+                            <legend>Modalidad de contacto</legend>
+                            <div class="choice-list">
+                                <label class="choice">
+                                    <input type="radio" name="contacto" value="whatsapp" checked>
+                                    <span>WhatsApp</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="contacto" value="email">
+                                    <span>Correo electrónico</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="contacto" value="llamada">
+                                    <span>Llamada telefónica</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="reserve-grid">
+                            <div class="field">
+                                <label for="email">
+                                    Correo electrónico
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Peticiones especiales -->
+                    <div class="reserve-block">
+                        <h3>Peticiones especiales</h3>
+
+                        <div class="field">
+                            <label for="peticiones">Cuéntanos qué necesitas</label>
+                            <textarea id="peticiones" name="peticiones" rows="5" maxlength="500"
+                                placeholder="Decoración especial, hora de llegada tarde..."></textarea>
+                            <small class="field-help">Máximo 500 caracteres. (Opcional)</small>
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="reserve-actions">
+                        <button type="submit" class="btn-primary">Confirmar reserva</button>
+                        <button type="reset" class="btn-secondary">Limpiar</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <section>
+                <h3>Ubicación</h3>
+                <p>Vía a Ipiales · Colombia</p>
+            </section>
+            <section>
+                <h3>Síguenos</h3>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </section>
+            <section>
+                <h3>Contacto</h3>
+                <p>reservas@elrefugio.com</p>
+                <p>+57 300 432 7988</p>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>
