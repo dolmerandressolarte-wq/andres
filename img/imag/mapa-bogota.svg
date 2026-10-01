@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="title description">
+  <title id="title">Mapa de ubicación en Bogotá</title>
+  <desc id="description">Mapa ilustrado de calles con un marcador para SaludVida Hospital.</desc>
+  <rect width="600" height="300" fill="#eef1ed"/>
+  <path d="M0 40 600 250M-20 220 550-20M45 0l140 300M330 0l100 300M0 145l600-30M0 270 600 70M245 0l-40 300M500 0 280 300" fill="none" stroke="#fff" stroke-width="19"/>
+  <path d="M0 40 600 250M-20 220 550-20M45 0l140 300M330 0l100 300M0 145l600-30M0 270 600 70M245 0l-40 300M500 0 280 300" fill="none" stroke="#d7ddd9" stroke-width="2"/>
+  <path d="M0 178 600 88M370 300 455 0" fill="none" stroke="#f2d987" stroke-width="7"/>
+  <path d="M35 25h90v44H35zm150 22h83v48h-83zm233 42h112v45H418zM72 199h92v52H72zm216 8h99v52h-99zm202-68h76v38h-76z" fill="#dce9d9" stroke="#c6d6c4" stroke-width="2"/>
+  <g transform="translate(305 144)">
+    <path d="M0 36s-23-27-23-44a23 23 0 1 1 46 0C23 9 0 36 0 36Z" fill="#e54040" stroke="#fff" stroke-width="4"/>
+    <circle cy="-8" r="7" fill="#fff"/>
+  </g>
+</svg>
