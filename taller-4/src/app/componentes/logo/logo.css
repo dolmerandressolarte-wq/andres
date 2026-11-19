@@ -1,0 +1,9 @@
+.logo {
+  background-color: #FFC107;
+  color: #ffffff;
+  padding: 15px 25px;
+  font-weight: bold;
+  border: 2px solid #E0A800;
+  border-radius: 4px;
+  font-size: 1rem;
+}

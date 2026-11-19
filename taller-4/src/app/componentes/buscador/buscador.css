@@ -1,0 +1,10 @@
+.buscador {
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 180px;
+  text-align: center;
+  font-size: 1rem;
+}

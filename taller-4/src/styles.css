@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+/* ========== IMPORTAR GOOGLE FONTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/*(Brand) */
+:root {
+  --color-h2: #ff4900;
+  --size-h2: 2rem;
+
+  --color-p1: #0093FF;
+  --size-p1: 16px;
+  --font-p1: Arial, sans-serif;
+
+  --color-p2: #c500ff;
+  --size-p2: 12px;
+  --font-p2: 'Nerko One', cursive;
+
+  --color-link: #001bff;
+  --color-link-visited: #4CAF50;
+  --color-link-hover: #ff6600;
+}
+
+/* ========== HTML y BODY ========== */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* ========== H2 ========== */
+h2 {
+  color: var(--color-h2);
+  font-size: var(--size-h2);
+}
+
+/* ========== PÁRRAFOS ========== */
+p {
+  font-size: var(--size-p1);
+  color: var(--color-p1);
+  font-family: var(--font-p1);
+}
+
+p.parrafo-nerko {
+  font-size: var(--size-p2);
+  color: var(--color-p2);
+  font-family: var(--font-p2);
+}
+
+/* ========== ENLACES ========== */
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* ========== TABLA ========== */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+table th {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+table tr:nth-child(2) td,
+table tr:nth-child(4) td {
+  background-color: #bec1c3;
+  color: #000000;
+}
+
+table tr:nth-child(3) td {
+  background-color: #045795;
+  color: #ffffff;
+}

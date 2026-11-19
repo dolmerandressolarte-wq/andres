@@ -1,0 +1,15 @@
+.footer {
+  background-color: #FFA500;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer-label {
+  color: #ffffff;
+  margin-right: 15px;
+}

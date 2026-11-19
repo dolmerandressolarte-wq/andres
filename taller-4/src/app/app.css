@@ -1,0 +1,29 @@
+.parte-1 {
+  padding: 20px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #045795;
+  padding: 4px;          
+  border-radius: 8px;
+}
+
+
+.franja-contenedor {
+  background-color: #045795;
+  color: #000000;          
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 0;
+  font-size: 0.9rem;
+}
+
+.cuerpo {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: stretch;
+}
